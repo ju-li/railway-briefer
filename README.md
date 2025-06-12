@@ -27,7 +27,3 @@ This repository contains the configuration and Dockerfiles for deploying Briefer
 2. **briefer Web Service:**
    - The `web.Dockerfile` starts from `briefercloud/briefer-web` and updates the `start.sh` script to use `HOSTNAME=::` for IPv6 support.
    - This ensures that the Next.js app listens on IPv6, allowing connections from Railway's internal IPv6 addresses.
-
-## Deployment
-
-To deploy Briefer Cloud into Railway, build and push the Docker images using the provided Dockerfiles. Ensure that the environment variables (e.g., `WEB_URL`, `API_URL`) are set correctly in your Railway configuration.
